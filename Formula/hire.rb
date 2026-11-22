@@ -1,30 +1,30 @@
 # hire - task runner for any-language taskfiles (Lua native, Python/Node/C++ via the __hire__ contract) with background jobs built in (bstart/watch/stop).
-# Formula template; CI renders 2.0.2 + per-platform sha256 placeholders.
+# Formula template; CI renders 2.0.3 + per-platform sha256 placeholders.
 # https://github.com/XiaTian-AC/hire
 
 class Hire < Formula
   desc "Task runner for any-language taskfiles (Lua native, Python/Node/C++ via contract) with background jobs built in"
   homepage "https://github.com/XiaTian-AC/hire"
   license "MIT"
-  version "2.0.2"
+  version "2.0.3"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/XiaTian-AC/hire/releases/download/v2.0.2/hire-darwin-arm64.tar.gz"
-      sha256 "b8a156f39293b46a983b6d0878e88393ce2fd42e8d649130b3b62d3c4b6e46b3"
+      url "https://github.com/XiaTian-AC/hire/releases/download/v2.0.3/hire-darwin-arm64.tar.gz"
+      sha256 "b7659450408e19339cb7bd06357e51c530a28c32e8c772c9163fbc84249c1893"
     else
-      url "https://github.com/XiaTian-AC/hire/releases/download/v2.0.2/hire-darwin-amd64.tar.gz"
-      sha256 "9316401ec1750df2a9fd02dae1f84ca27cafdb91a60dc5f4f52b58f4f3facdee"
+      url "https://github.com/XiaTian-AC/hire/releases/download/v2.0.3/hire-darwin-amd64.tar.gz"
+      sha256 "bebfc63195225aa356cc6791d101d37411af067a43576364b078dd5f45ee69e5"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/XiaTian-AC/hire/releases/download/v2.0.2/hire-linux-arm64.tar.gz"
-      sha256 "f7ffd589f8d8932223e684b28faf922875cfa019a8e9c0d9ab8966fe2883b722"
+      url "https://github.com/XiaTian-AC/hire/releases/download/v2.0.3/hire-linux-arm64.tar.gz"
+      sha256 "0a21f064213fb4150a2c49bc3d8fced4505ca386a8fc0550e762e2708303bbe3"
     else
-      url "https://github.com/XiaTian-AC/hire/releases/download/v2.0.2/hire-linux-amd64.tar.gz"
-      sha256 "a01a9b677982258f59c16b8b3d89d68b2e478464caed96ca091f53410262c28d"
+      url "https://github.com/XiaTian-AC/hire/releases/download/v2.0.3/hire-linux-amd64.tar.gz"
+      sha256 "e1d35375cc061c6ffc2b6748c1f8c1308b97c8eac9950e402be0fa6ae2bdc564"
     end
   end
 
